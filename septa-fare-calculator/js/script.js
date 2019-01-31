@@ -75,7 +75,7 @@ $(document).on('change', '#septa-ticket-type-dropdown', function(e) {
   if (scheduleType === 'anytime') {
     // set defined values for anytime option/disable
     // might be nice to have message for greater than 10 tickets for info about "anytime" option
-    ticketQuantity = 10;
+    ticketQuantity = 10; // might be nice to reset back to previous option quantity after clicking off instead of staying @ 10
     $septaTicketQuantity.prop('value', ticketQuantity);
     $septaTicketQuantity.prop('disabled', true);
     purchaseTime = 'advance_purchase';
